@@ -1,6 +1,2 @@
-# CoA project files (stay local)
+# Local project files only
 PROJECT-NOTES.md
-*.zip
-
-# Original HealBot docs we don't need in repo
-Docs/
