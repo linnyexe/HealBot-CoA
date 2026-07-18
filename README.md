@@ -2,8 +2,10 @@
 
 **HealBot 3.3.5.4 patched for [Conquest of Azeroth](https://ascension.gg) (WoW Ascension)**
 
-## Download
-Click the green **Code** button → **Download ZIP**, extract, and copy the `HealBot` folder into your `Interface/AddOns/` directory.
+## Installation
+1. Copy **HealBot** folder to your `Interface/AddOns` folder (delete any previous HealBot first, or rename it to avoid conflicts)
+2. Copy contents of [HB2.zip](https://github.com/linnyexe/HealBot-CoA/releases) to `WTF\Account\ACCOUNTNAME\SavedVariables`
+3. Copy contents of [HB3.zip](https://github.com/linnyexe/HealBot-CoA/releases) to `WTF\Account\ACCOUNTNAME\REALM\CHARNAME\SavedVariables`
 
 ---
 
