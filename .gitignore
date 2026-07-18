@@ -1,0 +1,7 @@
+# CoA custom classes and HealBot data
+WOW-modding/CoA-classes.txt
+PROJECT-NOTES.md
+*.zip
+
+# Original HealBot files we don't need in the repo
+# (keeping all .lua/.xml since they're patched)
