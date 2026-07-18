@@ -6,7 +6,7 @@ Adds support for all 21 custom classes on the Conquest of Azeroth (CoA) server.
 
 ## What This Fixes
 
-HealBot 3.3.5.4 crashes on load when running CoA because `HealBot_Update_Skins()` calls `pairs(HealBot_GlobalsDefaults.WatchHoT[class])` where `class="CULT"` (first 4 chars of CULTIST). The WatchHoT table only contains 10 standard WoW classes, so `pairs(nil)` crashes Lua and kills the entire addon init. No panel ever shows.
+HealBot 3.3.5.4 crashes on load when running CoA because `HealBot_Update_Skins()` calls `pairs(HealBot_GlobalsDefaults.WatchHoT[class])` where `class="CULT"` (first 4 chars of CULTIST). The WatchHoT table only contains 10 standard WoW classes, so `pairs(nil)` crashes Lua and kills the entire addon init - no panel ever shows.
 
 ## Changes Made
 
@@ -72,4 +72,4 @@ HealBot 3.3.5.4 crashes on load when running CoA because `HealBot_Update_Skins()
 
 ## License
 
-HealBot is开源 under its original license. This patch is provided as-is.
+HealBot is open source under its original license. This patch is provided as-is.
