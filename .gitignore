@@ -2,6 +2,21 @@
 WOW-modding/CoA-classes.txt
 PROJECT-NOTES.md
 *.zip
+*.tga
 
-# Large binary assets not needed for the patch
-Images/
+# Only keep patched Lua files and readme
+!HealBot.lua
+!HealBot_Data.lua
+!HealBot_Panel.lua
+!HealBot_Options.lua
+!HealBot_Action.lua
+!HealBot_Action.xml
+!HealBot.toc
+!embeds.xml
+!README.md
+!README
+!.gitignore
+
+# Exclude original unpatched XML docs
+*.html
+Docs/
