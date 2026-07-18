@@ -2,13 +2,6 @@
 
 **HealBot 3.3.5.4 patched for [Conquest of Azeroth](https://ascension.gg) (WoW Ascension)**
 
-## Installation
-1. Copy **HealBot** folder to your `Interface/AddOns` folder (delete any previous HealBot first, or rename it to avoid conflicts)
-2. Copy contents of [HB2.zip](https://github.com/linnyexe/HealBot-CoA/releases/download/v1.0/HB2.zip) to `WTF\Account\ACCOUNTNAME\SavedVariables`
-3. Copy contents of [HB3.zip](https://github.com/linnyexe/HealBot-CoA/releases/download/v1.0/HB3.zip) to `WTF\Account\ACCOUNTNAME\REALM\CHARNAME\SavedVariables`
-
----
-
 Adds support for all 21 custom classes on the Conquest of Azeroth (CoA) server.
 
 ## What This Fixes
@@ -18,7 +11,7 @@ HealBot 3.3.5.4 crashes on load when running CoA because `HealBot_Update_Skins()
 ## Changes Made
 
 ### Core Fix (nil-guard + auto-create)
-- **HealBot.lua** - Nil guard on `pairs()` call in `HealBot_Update_Skins()`, auto-create `WatchHoT[class]` if missing, nil guard in `HealBot_configClassHoT`
+- **HealBot.lua** — Nil guard on `pairs()` call in `HealBot_Update_Skins()`, auto-create `WatchHoT[class]` if missing, nil guard in `HealBot_configClassHoT`
 
 ### 21 Custom Classes Added
 | Class | Abbrev | Class ID |
@@ -48,14 +41,14 @@ HealBot 3.3.5.4 crashes on load when running CoA because `HealBot_Update_Skins()
 > Note: Witch Hunter and Witch Doctor share the `WITC` abbreviation (both purple in RAID_CLASS_COLORS).
 
 ### Per-File Details
-- **HealBot_Data.lua** - 21 custom classes in `HealBot_Class_En`, empty `WatchHoT` tables, `HoTReserve`
-- **HealBot_Panel.lua** - 21 custom classes in `HealBot_ClassIconCoord` (DEFAULT icon fallback)
-- **HealBot_Options.lua** - Nil guard in `InitBuffClassList`, empty entries in `Buff_Spells_Total_List` and `Debuff_Spells`, nil-guarded `WatchHoT` access in `_Refresh` and `_OnSelect`
-- **HealBot_Action.lua** - 21 class colors in `hbClassCols` (sourced from CoA client's `RAID_CLASS_COLORS`), gray fallback for unknown classes
+- **HealBot_Data.lua** — 21 custom classes in `HealBot_Class_En`, empty `WatchHoT` tables, `HoTReserve`
+- **HealBot_Panel.lua** — 21 custom classes in `HealBot_ClassIconCoord` (DEFAULT icon fallback)
+- **HealBot_Options.lua** — Nil guard in `InitBuffClassList`, empty entries in `Buff_Spells_Total_List` and `Debuff_Spells`, nil-guarded `WatchHoT` access in `_Refresh` and `_OnSelect`
+- **HealBot_Action.lua** — 21 class colors in `hbClassCols` (sourced from CoA client's `RAID_CLASS_COLORS`), gray fallback for unknown classes
 
 ### Extra Features
-- **BG Flag Carrier Icon** - Standalone `UNIT_AURA` event frame (`HealBot_CoA_FlagFrame`) that displays a flag icon on HealBot bars when a player is carrying Horde/Alliance flag. Works by matching buff name ("Horde Flag" / "Alliance Flag") since CoA returns nil for spell ID in UnitAura's 10th parameter.
-- **Universal Range Check** - Added catch-all in `HealBot_Action_SetrSpell()` that scans `HealBot_Globals.Spell` table for first known spell, with nil guard for early init when Globals.Spell doesn't exist yet. Prevents custom classes from falling back to Heavy Runecloth Bandage (~15yd range).
+- **BG Flag Carrier Icon** — Standalone `UNIT_AURA` event frame (`HealBot_CoA_FlagFrame`) that displays a flag icon on HealBot bars when a player is carrying Horde/Alliance flag. Works by matching buff name ("Horde Flag" / "Alliance Flag") since CoA returns nil for spell ID in UnitAura's 10th parameter.
+- **Universal Range Check** — Added catch-all in `HealBot_Action_SetrSpell()` that scans `HealBot_Globals.Spell` table for first known spell, with nil guard for early init when Globals.Spell doesn't exist yet. Prevents custom classes from falling back to Heavy Runecloth Bandage (~15yd range).
 
 ## Installation
 

@@ -1,7 +1,24 @@
-# CoA custom classes and HealBot data
-WOW-modding/CoA-classes.txt
+# Local project files only
 PROJECT-NOTES.md
-*.zip
 
-# Original HealBot files we don't need in the repo
-# (keeping all .lua/.xml since they're patched)
+# These exist inside HealBot/ subfolder already
+Docs/
+Images/
+Libs/
+Locale/
+HealBot.lua
+HealBot.toc
+HealBot.xml
+HealBot_Action.lua
+HealBot_Action.xml
+HealBot_Comms.lua
+HealBot_Comms.xml
+HealBot_Data.lua
+HealBot_IncHeals.lua
+HealBot_Init.lua
+HealBot_Options.lua
+HealBot_Options.xml
+HealBot_Panel.lua
+HealBot_Tooltip.lua
+Reset_HealBot.bat
+embeds.xml
